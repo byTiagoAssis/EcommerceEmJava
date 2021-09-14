@@ -8,7 +8,7 @@ public class TelaInicial {
 
 	public static void main(String[] args) {
 
-		Produto p1 = new Produto("nfndk", "nfjsgd");
+		Produto p1 = new Produto("NANPPA", "A Loja do dev desesperado!");
 
 		Scanner scan = new Scanner(System.in);
 		/*
@@ -52,6 +52,10 @@ public class TelaInicial {
 			fazerCompra = true;
 		}
 		if (fazerCompra == false) {
+			for (int L = 0; L < 50; L++) {
+
+				System.out.println("\n");
+			}
 			System.out.print("\n===============================================================================\n");
 			System.out.print("\n\n");
 			System.out.print("Ok! Espero que nos vejamos em breve! ");
@@ -83,9 +87,11 @@ public class TelaInicial {
 
 						System.out.println("\n");
 					}
+
 					p1.formaPagamento();
 					p1.notaFiscal();
 					break;
+
 				}
 			}
 		}

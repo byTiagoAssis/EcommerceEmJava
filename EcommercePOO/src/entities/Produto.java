@@ -19,19 +19,6 @@ public class Produto {
 	protected double valorTotalDaCompra = 0.00;
 	protected double precoPagar = 0.00;
 
-	public void cabecalho() {
-		String nomeLoja = "NANPPA", slogan = "A Loja do Dev desesperado!\n";
-
-		System.out.print("\n");
-		System.out.print("\n===============================================================================\n");
-		System.out.print(nomeLoja);
-		System.out.print("\n");
-		System.out.print(slogan);
-		System.out.print("===============================================================================\n");
-		System.out.print("\n");
-
-	}
-
 	public Produto(String nomeLoja, String slogan) {
 		super();
 		this.nomeLoja = nomeLoja;
@@ -128,6 +115,19 @@ public class Produto {
 
 	public static int getValorfixo() {
 		return VALORFIXO;
+	}
+
+	public void cabecalho() {
+		String nomeLoja = "NANPPA", slogan = "A Loja do Dev desesperado!\n";
+
+		System.out.print("\n");
+		System.out.print("\n===============================================================================\n");
+		System.out.print(nomeLoja);
+		System.out.print("\n");
+		System.out.print(slogan);
+		System.out.print("===============================================================================\n");
+		System.out.print("\n");
+
 	}
 
 	public void mostraProduto() {
@@ -235,17 +235,16 @@ public class Produto {
 			System.out.print(estoque[l]);
 			System.out.print("\n");
 		}
-	
+
 		System.out.print("\n===============================================================================\n");
 		System.out.print("CARRINHO DE COMPRAS");
 		System.out.print("\n===============================================================================\n");
 		carrinho();
-		
+
 	}
 
 	public void carrinho() {
-		
-		
+
 		// System.out.println("\nCarrinho de Compras: \n");
 		// System.out.println("\n");
 		System.out.print(tituloMatriz[0]);
@@ -318,7 +317,7 @@ public class Produto {
 
 	public void notaFiscal() {
 		cabecalho();
-		
+
 		System.out.print("===============================================================================\n");
 		System.out.print("NOTA FISCAL");
 		System.out.print("\n===============================================================================\n");
